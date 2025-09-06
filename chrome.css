@@ -1,5 +1,5 @@
 .titlebar-buttonbox {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .titlebar-button {
@@ -9,8 +9,9 @@
     height: 18px !important;
     align-self: center;
     margin-left: 5px !important;
-    border-radius: 12px;
+    border-radius: 50px;
     transition: all 250ms;
+    margin-top: 10px !important;
 }
 
 .titlebar-min {
@@ -25,9 +26,7 @@
     background-color: hsl(0, 50%, 50%) !important;
 }
 
-.titlebar-button > image {
-    visibility: collapse !important;
-}
+
 
 @media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
     .titlebar-button:hover {
@@ -55,4 +54,22 @@
     .titlebar-button:hover {
         min-height: 20px !important;
     }
+}
+
+.titlebar-min,
+.titlebar-max,
+.titlebar-restore,
+.titlebar-close {
+    position: relative;
+}
+
+.titlebar-min::before,
+.titlebar-max::before,
+.titlebar-restore::before,
+.titlebar-close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

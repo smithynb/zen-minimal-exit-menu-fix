@@ -1,28 +1,28 @@
 .titlebar-buttonbox {
-    margin-right: 0px;
+    margin-right: 15px;
 }
 
 .titlebar-button {
     padding: 0px !important;
-    min-height: 20px !important;
-    min-width: 13px !important;
-    height: 20px !important;
+    min-height: 18px !important;
+    min-width: 18px !important;
+    height: 18px !important;
     align-self: center;
     margin-left: 5px !important;
     border-radius: 12px;
-    transition: all 1000ms;
+    transition: all 250ms;
 }
 
 .titlebar-min {
-    background-color: hsl(236, 50%, 40%) !important;
+    background-color: hsl(130, 50%, 40%) !important;
 }
 
 .titlebar-max, .titlebar-restore {
-    background-color: hsl(140, 50%, 50%) !important;
+    background-color: hsl(60, 50%, 50%) !important;
 }
 
 .titlebar-close {
-    background-color: hsl(321, 50%, 50%) !important;
+    background-color: hsl(0, 50%, 50%) !important;
 }
 
 .titlebar-button > image {

@@ -63,6 +63,7 @@
     position: relative;
 }
 
+/*Center Windows glyphs inside titlebar buttons */
 .titlebar-min::before,
 .titlebar-max::before,
 .titlebar-restore::before,
@@ -72,4 +73,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Hide default Windows glyphs inside titlebar buttons */ 
+.titlebar-button image, 
+.titlebar-button .toolbarbutton-icon, 
+.titlebar-button::before, 
+.titlebar-button::after { 
+    display: none !important; visibility: collapse !important;
 }
